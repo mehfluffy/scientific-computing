@@ -1,1 +1,1 @@
-# integrating-in-python
+# Scientific computing
