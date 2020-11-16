@@ -1,3 +1,18 @@
+def trapint(f, a, b, N):
+    """
+    Definite integration using the trapezoidal rule.
+    f: callable function to be integrated along 1st axis
+    a,b: integration from a to b
+    N: number of steps
+    """
+    h = (b-a)/N
+    x = np.linspace(a, b, N)
+    fs = np.array(f(x))
+    for i in [0, N-1]:
+        fs[i] = fs[i]/2
+    integral = h*fs.sum()
+    return integral
+
 def odeRK4(y0, dydx, start, end, N):
     """
     Finds y(x) from y(0) and dy/dx using Runge-Kutta
