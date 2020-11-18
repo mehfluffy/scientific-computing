@@ -1,3 +1,8 @@
+#!/usr/bin/python
+"""
+A script to find the root of a 1D function using bisection.
+"""
+
 from numpy import *
 
 def f(x, func):
