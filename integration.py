@@ -1,3 +1,5 @@
+import numpy as np
+
 def trapint(f, a, b, N):
     """
     Definite integration using the trapezoidal rule.
